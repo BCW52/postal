@@ -4,8 +4,6 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt update
 sudo apt -y upgrade
 sudo apt -y install git jq docker-ce docker-ce-cli containerd.io mariadb-server libmysqlclient-dev apt-transport-https
-sudo usermod -aG docker $USER
-newgrp docker
 wget 'https://github.com/docker/compose/releases/download/v2.11.0/docker-compose-linux-x86_64'
 cp docker-compose-linux-x86_64 /bin/docker-compose
 sudo chmod 777 /bin/docker-compose
